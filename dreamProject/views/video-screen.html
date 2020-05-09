@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>lily</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Registration-Form-with-Photo.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid" style="background-color: #eeeeee;">
+        <h4>watch video and solve questions</h4>
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column">
+                    <div id="player"></div>
+                    <div style="margin-top: 4px;margin-bottom: 4px;width: 340px;">
+                        <div class="row" style="width: 320px;">
+                            <div class="col"><button class="btn btn-primary text-truncate text-center border rounded" type="button" style="background-color: #465465;font-size: 16px;">load videos</button></div>
+                            <div class="col"><span class="badge badge-pill badge-primary" style="margin-left: 25px;padding-top: 3px;padding-right: 11px;padding-bottom: 3px;padding-left: 11px;background-color: #0019ff;">0</span></div>
+                            <div class="col"><button class="btn btn-primary btn-block" type="button" style="background-color: rgb(26,149,16);">next</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div>
+                    <div><label id="ques-1" style="font-size: 16px;font-weight: normal;font-family: Montserrat, sans-serif;">Q 1. what is motto?</label>
+                        <div class="custom-control custom-radio" style="font-family: ABeeZee, sans-serif;" for="ques-1"><input class="custom-control-input" type="radio" id="formCheck-1" name="ques-1" value="0"><label class="custom-control-label" for="formCheck-1">doctor</label></div>
+                        <div class="custom-control custom-radio" for="ques-1"><input class="custom-control-input" type="radio" id="formCheck-2" name="ques-1" value="1"><label class="custom-control-label" for="formCheck-2" style="font-family: ABeeZee, sans-serif;">engineer</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="text-center"><button class="btn btn-primary border-white shadow-sm" type="button" style="margin-top: 20px;background-color: rgba(12,153,153,0.91);">Claim</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/youtube.js"></script>
+</body>
+
+</html>

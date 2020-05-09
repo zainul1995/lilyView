@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>lily</title>
+
+</head>
+<body>
+    <div class="container-fluid">
+
+        <!-- A fluid container that uses the full witdh -->
+        <nav class="navbar fixed-top navbar-dark bg-dark">
+          <a class="navbar-brand ml-5 font-weight-bolder text-center" href="#!">Lord Views</a>
+        </nav>
+        <div class="d-flex flex-column mt-5">
+          <h4 class="p-2 align-self-sm-center"> Watch Videos</h4>
+          <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+          <div id="player" class="p-2 align-self-sm-center"></div>
+          <div class= "d-flex flex-row justify-content-center"> 
+            <button type="button" class="btn btn-primary load m-2 col-sm-2 p-2 ">Url</button>
+            <span class="badge badge-secondary align-self-center pt-2 ">0</span>
+            <button type="button" class="btn btn-primary m-2 col-sm-2 p-2">Next</button>
+
+          </div>
+
+          <form class="d-flex flex-column ">
+              <div class="form-group ml-2 align-self-sm-center">
+                <label for="formGroupExampleInput">Q1. question 1</label>
+                <!-- <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input"> -->
+                  <div class="custom-control custom-radio" id="formGroupExampleInput" >
+                    <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" value="1">
+                    <label class="custom-control-label" for="customRadio1">Toggle this custom radio</label>
+                  </div>
+                  <div class="custom-control custom-radio" id="formGroupExampleInput">
+                    <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input" value="2">
+                    <label class="custom-control-label" for="customRadio2">Or toggle this other custom radio</label>
+                  </div>
+              </div>                
+              <button type="submit" class="btn btn-primary btn-success align-self-sm-center mb-2">Submit</button>
+          </form>
+      
+          <div class="d-flex flex-column mb-5">  
+            <form class="form-inline align-self-sm-center">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 user" id="inlineFormInputName2" placeholder="Jane Doe">
+              
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2 password" id="inlineFormInputName3" placeholder="Password">
+              
+                <div class="form-check mb-2 mr-sm-2">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <label class="form-check-label" for="inlineFormCheck">
+                    Remember me
+                  </label>
+                </div>
+              
+              </form>
+              <button type="xx" id = "signin" class="btn btn-primary mb-2">Sign In</button>
+              
+        
+            <nav class="navbar fixed-bottom navbar-dark bg-dark">
+            <a class="navbar-brand ml-5 font-weight-bolder text-center" href="#!">Subscribe To </a>
+            </nav>
+                 
+      </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="youtube.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

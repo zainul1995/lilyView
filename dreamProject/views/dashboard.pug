@@ -1,0 +1,36 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title lily
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=ABeeZee')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abril+Fatface')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700i')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css')
+  link(rel='stylesheet' href='https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css')
+  link(rel='stylesheet' href='/css/Login-Form-Clean.css')
+  link(rel='stylesheet' href='/css/Navigation-Clean.css')
+  link(rel='stylesheet' href='/css/Registration-Form-with-Photo.css')
+  link(rel='stylesheet' href='/css/styles.css')
+section#dashboard.d-flex.flex-column.justify-content-around.align-items-center(style='background-color: #e81b46;')
+  .top-section
+    .d-flex.flex-row.align-self-center
+      p
+        span#points.text-white.border-white.border-points(style='padding: 13px;border: 3px solid;border-radius: 0.5rem;margin-right: 15px;font-size: 23px;')
+          strong=user.points
+      a.btn.btn-primary.text-truncate.border.rounded.border-light.shadow#logout(href='/logout' type='button' style='margin-left: 15px;background-color: rgb(245,247,249);font-size: 18px;color: rgb(232,27,70);font-family: Montserrat, sans-serif;')
+        strong Log Out
+
+
+  #element(style='background-color: #eeeeee;')
+    .container.clearfix
+      .row
+        .col(style='background-color: #e81b46;')
+          a#button-view.btn.btn-primary.text-truncate.border.rounded.shadow(href = '/view-videos' style='color: rgb(232,27,70);background-color: rgb(245,247,249);font-weight: bold;font-family: Montserrat, sans-serif;') View Videos
+        .col(style='background-color: #e81b46;')
+          a#button-upload.btn.btn-primary.text-truncate.border.rounded.shadow(href='/upload-video' style='color: rgb(232,27,70);background-color: rgb(245,247,249);font-weight: bold;font-family: Montserrat, sans-serif;') Upload Videos
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js')
+script(src='https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js')
+script(src='/js/bundle.js')

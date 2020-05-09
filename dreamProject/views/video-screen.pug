@@ -1,0 +1,89 @@
+doctype html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+  title lily
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=ABeeZee')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Abril+Fatface')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700i')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css')
+  link(rel='stylesheet' href='https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css')
+  link(rel='stylesheet' href='assets/css/Login-Form-Clean.css')
+  link(rel='stylesheet' href='assets/css/Navigation-Clean.css')
+  link(rel='stylesheet' href='assets/css/Registration-Form-with-Photo.css')
+  link(rel='stylesheet' href='assets/css/styles.css')
+.container-fluid(style='background-color: #eeeeee;')
+  h4 watch video and solve questions
+  .row
+    .col
+      .d-flex.flex-column
+        #player
+        div(style='margin-top: 4px;margin-bottom: 4px;width: 340px;')
+          .row(style='width: 320px;')
+            .col
+              button.btn.btn-primary.text-truncate.text-center.border.rounded#load-videos(type='button' style='background-color: #465465;font-size: 16px;') load videos
+            .col
+              span.badge.badge-pill.badge-primary#counter(style='margin-left: 12px;padding-top: 3px;padding-right: 11px;padding-bottom: 3px;padding-left: 11px;background-color: #0019ff;') 0
+            .col
+              button.btn.btn-primary.btn-block#next-video(type='button' style='background-color: rgb(26,149,16);') next
+    .col-md-4
+      div
+        div.question-class
+          //- label#ques-1(style='font-size: 16px;font-weight: normal;font-family: Montserrat, sans-serif;') Q 1. what is motto?
+          //- .custom-control.custom-radio(style='font-family: ABeeZee, sans-serif;' for='ques-1')
+          //-   input#formCheck-1.custom-control-input(type='radio' name='ques-1' value='0')
+          //-   label.custom-control-label(for='formCheck-1') doctor
+          //- .custom-control.custom-radio(for='ques-1')
+          //-   input#formCheck-2.custom-control-input(type='radio' name='ques-1' value='1')
+          //-   label.custom-control-label(for='formCheck-2' style='font-family: ABeeZee, sans-serif;') engineer
+    .col
+      .text-center
+        button.btn.btn-primary.border-white.shadow-sm#claim(type='button' style='margin-top: 20px;background-color: rgba(12,153,153,0.91);') Claim
+script(src='https://www.youtube.com/iframe_api')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js')
+script(src='https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js')
+script(src='/js/bundle.js')
+//- script(src='/js/youtube.js')
+//- script.
+  //- var tag = document.createElement('script');
+
+  //-     tag.src = "https://www.youtube.com/iframe_api";
+  //-     var firstScriptTag = document.getElementsByTagName('script')[0];
+  //-     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  //-     // 3. This function creates an <iframe> (and YouTube player)
+  //-     //    after the API code downloads.
+  //-     var player;
+  //-     function onYouTubeIframeAPIReady() {
+  //-       player = new YT.Player('player', {
+  //-         height: '240',
+  //-         width: '340',
+  //-         videoId: 'M7lc1UVf-VE',
+  //-         events: {
+  //-           'onReady': onPlayerReady,
+  //-           'onStateChange': onPlayerStateChange
+  //-         }
+  //-       });
+  //-     }
+
+  //-     // 4. The API will call this function when the video player is ready.
+  //-     function onPlayerReady(event) {
+  //-       event.target.playVideo();
+  //-     }
+
+  //-     // 5. The API calls this function when the player's state changes.
+  //-     //    The function indicates that when playing a video (state=1),
+  //-     //    the player should play for six seconds and then stop.
+  //-     var done = false;
+  //-     function onPlayerStateChange(event) {
+  //-       if (event.data == YT.PlayerState.PLAYING && !done) {
+  //-         setTimeout(stopVideo, 6000);
+  //-         done = true;
+  //-       }
+  //-     }
+  //-     function stopVideo() {
+  //-       player.stopVideo();
+  //-     }
+   
