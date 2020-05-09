@@ -15,7 +15,7 @@ app.use(cors({origin: 'http://127.0.0.1:3000', credentials: 'true'}));
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, './dreamProject/views'));
 app.use(express.static(path.join(__dirname, 'public')));
-
+// web app for youtube
 const Student = require('./StudentModel');
 app.get('/tours', (req, res) =>{
     console.log(req);
