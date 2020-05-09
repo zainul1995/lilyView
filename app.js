@@ -6,17 +6,21 @@ const studentRouter = require('./studentRoutes');
 const userRouter = require('./dreamProject/userRoutes');
 const viewRouter =  require('./dreamProject/viewRoutes');
 const cookieParser = require('cookie-parser');
+const compression = require('compression');
 const cors = require('cors');
+
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
 app.use(cookieParser());
-app.use(cors({origin: 'http://127.0.0.1:3000', credentials: 'true'}));
+app.use(cors());
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, './dreamProject/views'));
 app.use(express.static(path.join(__dirname, 'public')));
 // web app for youtube
 const Student = require('./StudentModel');
+
+app.use(compression());
 app.get('/tours', (req, res) =>{
     console.log(req);
     // res.send('happy from server side');
