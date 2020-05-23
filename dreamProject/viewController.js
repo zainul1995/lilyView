@@ -14,7 +14,7 @@ exports.getLoginForm = (req, res) => {
             title: 'LogIn'
         });
     } 
-    res.status(200).render('dashboard');
+    res.status(200).render('login');
 };
 exports.getSignUpForm = (req, res) => {
     res.status(200).render('signup',{
