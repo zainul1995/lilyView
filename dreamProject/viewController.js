@@ -11,7 +11,7 @@ exports.getOverview = (req, res) => {
 exports.getLoginForm = (req, res) => {
     console.log(res.locals.user);
     console.log(req.user);
-    if(!res.locals.user){
+    if(res.locals.user == undefined){
         res.status(200).render('login',{
             title: 'LogIn'
         });
