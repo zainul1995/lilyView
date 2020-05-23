@@ -10,9 +10,7 @@ viewRouter.route('/').get(viewController.getOverview);
 
 viewRouter.route('/signup').get(viewController.getSignUpForm);
 // viewRouter.use(userController.protect);
-viewRouter.route('/login').get((req,res) => {
-    res.send('working properly');
-})
+viewRouter.route('/login').get(viewController.getLoginForm)
 viewRouter.route('/dashboard').get(viewController.getDashBoard);
 viewRouter.route('/view-videos').get(viewController.getVideoScreen);
 viewRouter.route('/upload-video').get(viewController.getUploadScreen);

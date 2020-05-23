@@ -9,11 +9,11 @@ exports.getOverview = (req, res) => {
 };
 
 exports.getLoginForm = (req, res) => {
-    if(!req.user){
-        res.status(200).render('login',{
-            title: 'LogIn'
-        });
-    } 
+    // if(!req.user){
+    //     res.status(200).render('login',{
+    //         title: 'LogIn'
+    //     });
+    // } 
     res.status(200).render('dashboard');
 };
 exports.getSignUpForm = (req, res) => {
