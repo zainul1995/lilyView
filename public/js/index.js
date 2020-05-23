@@ -114,7 +114,7 @@ function onYouTubeIframeAPIReady() {
   const loadIds = async () => {
   const response = await axios({
   method: 'GET',
-  url: 'http://127.0.0.1:3000/api/v1/user/view/videos',
+  url: '/api/v1/user/view/videos',
 
   });
   video = response.data.videos;
