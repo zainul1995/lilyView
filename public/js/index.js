@@ -5,7 +5,6 @@
 import 'regenerator-runtime/runtime';
 import axios from 'axios';
 //javascript files
-import {onYouTubeIframeAPIReady, onPlayerReady, onPlayerStateChange, stopVideo} from './youtube';
 import {login, signup} from './userEntry';
 
 //GLOBAL VARIABLES
