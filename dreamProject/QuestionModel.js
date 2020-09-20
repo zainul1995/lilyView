@@ -3,9 +3,14 @@ const mongoose = require('mongoose');
 const validator = require('validator');
 
 const questionSchema = new mongoose.Schema({
-    name: String,
-    options:[String],
-    answer: String
+    question: String,
+    options:[{
+        answer: [{
+            option: String,
+            correct: Boolean
+        }]
+
+    }]
 });
 
 const Question = mongoose.model('Question', questionSchema);

@@ -1,0 +1,14 @@
+extends base 
+block content
+    .login-clean(style='background-image: linear-gradient(to right, rgb(85,72,170), rgb(85,30,22));')
+        form.form--login(style='background-color: rgba(255,255,255,0.77);')
+            h2.sr-only Login Form
+            .illustration
+                i.icon.ion-ios-navigate
+            .form-group
+                input.form-control#email(type='email' name='email' placeholder='Email')
+            .form-group
+                input.form-control#password(type='password' name='password' placeholder='Password')
+            .form-group
+                button.btn.btn-primary.btn-block(type='submit') Log In
+            //- a.forgot(href='#') Forgot your email or password?

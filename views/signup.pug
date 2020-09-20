@@ -1,0 +1,26 @@
+extends base
+block content
+    .register-photo
+        .form-container
+            .image-holder
+            form.form--signup
+                h2.text-center
+                    strong Create
+                    |  an account.
+
+                .form-group
+                    input.form-control#name(type='text' name='name' placeholder='username')
+                .form-group
+                    input.form-control#email(type='email' name='email' placeholder='Email')
+                .form-group
+                    input.form-control#password(type='password' name='password' placeholder='Password')
+                .form-group
+                    input.form-control#passwordConfirm(type='password' name='password-repeat' placeholder='Password (repeat)')
+                .form-group
+                    .custom-control.custom-switch
+                        input#customSwitch1.custom-control-input(type='checkbox')
+                        label.custom-control-label(for='customSwitch1') I agree to the license terms.
+                .form-group
+                    button.btn.btn-primary.btn-block(type='submit') Sign Up
+                a.already(href='#') You already have an account? Login here.
+

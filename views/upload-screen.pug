@@ -1,0 +1,25 @@
+extends base
+block content
+    #Upload.d-flex.flex-column.upload-main
+        a.btn.btn-outline-light.border.rounded.shadow-sm(href='/dashboard' type='button' style='height: 60px;width: 75px;margin-top: 9px;margin-left: 9px; font-size: 35px') &#8249
+        h4(style='color: white') Some Videos Are Unable to Load Have some patience, this bug will be fixed soon.. 
+        form.form--upload.border.rounded.align-self-center(style='background-color: rgba(222,206,206,0.94);font-size: 16px;font-family: Montserrat, sans-serif;padding-top: 11px;min-width: 353;max-width: 450px;min-height: 333;max-height: 602px;margin-top: 40px;')
+            .container.clearfix
+                .form-group.row
+                    label.col-sm-4(for='url' style='width: 122px;padding-top: 4px;') Add A Link
+                    .col-sm-8
+                        input.form-control#url(type='text' placeholder='https://youtu.be/videoId' inputmode='url' required='' autofocus='')
+                .form-group.row
+                    label.col-sm-4(for='watchtime' style='width: 135px;padding-top: 4px;font-size: 15px;') Time (in secs)
+                    .col-sm-8
+                        input.form-control#watchtime(type='text' placeholder='Time to Watch (in sec) ' inputmode='numeric' required='')
+                .form-group.row
+                    label.col-sm-4(for='number' style='width: 135px;padding-top: 4px;font-size: 15px;') Views
+                    .col-sm-8
+                        input.form-control#number(type='text' placeholder='No. of Views ' inputmode='numeric' required='')
+                .form-group.row
+                    label.col-sm-4(for='categories' style='width: 135px;padding-top: 4px;font-size: 15px;') Category
+                    .col-sm-8
+                        input.form-control#categories(type='text' placeholder='Education, Games, Music, News'  required='true')
+                .form-group
+                    button#uploadurl.btn.btn-info.btn-block(type='submit' style='margin-bottom: 11px;') Submit
